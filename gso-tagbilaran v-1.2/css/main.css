@@ -1088,9 +1088,107 @@ main > section {
 }
 
 
+.sidepanelgso  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: auto;
+  top: 0;
+  left: 0;
+  background-color: #08720b;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
 
+.sidepanelgso a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 15px;
+  color: #f1f1f1;
+  display: block;
+  transition: 0.3s;
+}
 
+.sidepanelgso a:hover {
+  color: #818181;
+}
 
+.sidepanelgso .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtngso {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #0f2660;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+
+}
+
+.openbtngso:hover {
+  background-color:#444;
+}
+
+.gso-tagbilaran-head-text {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #0ab40e;
+    color: white;
+    border: none;
+}
+
+.sir-john-head-text {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #0ab40e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.logo-holder {
+/*              width: 100%;
+    height: 88px;
+    background: blue;*/
+}
+
+.gso-feedback {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #0ab40e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    float: right;
+}
+
+.gso-login {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #0ab40e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    float: right;
+}
+
+.gso-search {
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #0ab40e;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    float: right;
+}
+
+/*=========== End Elmo Version ===========*/
 /*============================================================
 	Footer
 ==============================================================*/
