@@ -394,9 +394,9 @@ h1.navbar-brand {
 
 .caption-content h2 {
     color: #fff;
-    font-size: 52px;
+    font-size: 76px;
     font-weight: 400;
-    margin-bottom: 25px;
+    margin-bottom: 114px;
     text-transform: uppercase;
 }
 
@@ -1145,6 +1145,7 @@ a.cgso-link{
   color: #f1f1f1;
   display: block;
   transition: 0.3s;
+  padding:23px;
 }
 
 .sidepanelgso a:hover {
@@ -1279,6 +1280,20 @@ cgso-header-text.dotted-text{
 .stay-connected-subscribe-btn{
     width: 30%;
     height: 50px;
+}
+
+.welcome-color{
+    color:white;
+    font-size:27px
+}
+
+.asenso{
+    position: absolute;
+    font-size: 37px;
+    margin-top: 82px;
+    margin-left: 1208px;
+    color: white;
+}
 }
 
 /*=

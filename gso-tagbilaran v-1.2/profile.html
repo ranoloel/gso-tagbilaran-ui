@@ -67,7 +67,7 @@
 
 			<div id="mySidepanelgso" class="sidepanelgso">
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-			  <a href="#" class="toggle-menu-bg">HOME</a>
+			  <a href="index.html" class="toggle-menu-bg">HOME</a>
 			  <a href="#" class="toggle-menu-bg">VISION | MISSION | GOALS</a>
 			  <a href="#" class="toggle-menu-bg">CGSO DIVISIONS</a>
 			  <a href="#" class="toggle-menu-bg">CGSO MANUAL</a>
@@ -77,9 +77,9 @@
 			</div>
 
 			<button class="openbtngso" onclick="openNav()">☰</button> 
-			<button class="gso-tagbilaran-head-text"><b>GSO Tagbilaran</b> | <i>Chris John Rener G. Torralba</i> </button>
+			<button class="gso-tagbilaran-head-text"><a href="index.html"><b i style="color:white">GSO Tagbilaran</b></a> | <a href="profile.html"><i style="color:white">Chris John Rener G. Torralba</i></a> </button>
 			<button class="gso-login">LOGIN </button>
-			<button class="gso-feedback">FEEDBACK</button>
+			<button class="gso-feedback"><a href="feedback.html" style="color:white">FEEDBACK</button>
 			<button class="gso-search"><span class="glyphicon glyphicon-search"></span></button>
 			<div id="glogo" style="position: absolute; top: 15%; left: 47%;"><img src="img/gso_logo.png" height="100" width ="100"></div>
         </header>
@@ -175,18 +175,6 @@
 				</div>
 			</section>
 			<!-- end of GSO section -->
-
-			<!-- Latest News -->
-			<section id="portfolio">
-				<div class="container">
-					<div class="row">
-						<h2><b>LATEST NEWS</b></h2>
-						<div class="activity-line"></div>
-					</div>
-				</div>
-			</section>
-			<!-- end of Latest News section -->
-
 			<!-- Division & Section Heads -->
 			<section id="portfolio">
 					<div class="container">
@@ -364,50 +352,77 @@
 						</div>
 					</div>
 				</section>
+				<!-- Latest News -->
+				<section id="portfolio">
+					<div class="container">
+						<div class="row">
+							<h2><b>LATEST NEWS</b></h2>
+							<div class="activity-line"></div>
+						</div>
+					</div>
+				</section>
+				<!-- end of Latest News section -->
 				<!-- end of Division & Section Heads section -->
-
-			<section id="portfolio">
 				<div class="header-container-service-request">
 					<div class="container">
-						<h2><b>CGSO LATEST REQUESTS</b></h2>
+	<!-- 					<div class="row"> -->
+							<div class="cgso-wrapper">
+								<h2 class="cgso-header-text"><b>CGSO LATEST REQUESTS</b></h2>
+								<div class="col-md-6 col-sm-6 col-xs-12 text-left">
+										<div class="cgso-requests-text"><a href="">REQUEST TENT INSTALLATION</a></div>
+										<div class="cgso-requests-text dotted-text">---------------------------------------------------------------------------&nbsp;></div>
+										<div class="cgso-requests-text"><a href="">REQUEST CHAIRS, TABLES, PLATFORMS </a></div>
+										<div class="cgso-requests-text">---------------------------------------------------------------------------&nbsp;></div>
+										<div class="cgso-requests-text"><a href="">REQUEST SERVICE VEHICLES</a></div>
+										<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
+										<div class="cgso-requests-text"><a href="">REQUEST COPY OF LOT TITLES</a></div>
+										<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
+								</div>
+							</div>
+							<div class="col-md-6 col-sm-6 col-xs-12 text-left">
+									<div class="cgso-requests-text"><a href="">REPORT MISSING AND DAMAGED STREET SIGN</a></div>
+									<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
+									<div class="cgso-requests-text"><a href="">REPORT STREET OUTAGE</a></div>
+									<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
+									<div class="cgso-requests-text"><a href="">FUNERAL SERVICE VEHICLES</a></div>
+									<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
+									<div class="cgso-requests-text"><a href="">FUNERAL SERVICE VEHICLES </a></div>
+									<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;> </div>
+							</div>
+						<!-- </div> -->
 					</div>
 				</div>
 			</section>
-
 			<section id="portfolio">
 				<div class="container">
 					<div class="row">
 						<h2><b>STAY CONNECTED</b></h2>
 						<div class="activity-line"></div>
 						<div class="col-md-6 col-sm-6 col-xs-12 text-left">
-							<div class="stay-connected-content-right">Sign up for email updates from the City GSO</div>
+							<h2 class="stay-connected-content-left-footer">
+							Sign up for email updates from the</br>
+							 City GSO, including information </br>
+							 on the big events.
+							<h2>
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-							<div class="stay-connected-content-right">
-								<div class="email"> YOUR EMAIL ADDRESS </div>
+							<div class="stay-connected-content-right-footer">
+								<div class="stay-connected-content-email"><b>YOUR EMAIL ADDRESS</b></div>
+								<form>
+									<div class="stay-connected-content-email-input">
+										<input class="input-email-design" type="text" id="email" name="lname">
+									</div>
+									<div class="stay-connected-subscribe">
+									<button type="button" class="btn btn-success stay-connected-subscribe-btn">SUBSCRIBE</button>
+									</div>
+								</form>		
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<hr>
 		</main>
-		<footer id="footer">
-			<div class="container">
-				<div class="row text-center">
-					<div class="footer-content">
-						<div class="footer-social">
-							<ul>
-								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-twitter fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-facebook fa-3x"></i></a></li>
-								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-3x"></i></a></li>
-							</ul>
-						</div>
-						
-						<p>Copyright &copy; GSO | TAGBILARAN </p>
-					</div>
-				</div>
-			</div>
-		</footer>
 		
 		<!-- Essential jQuery Plugins
 		================================================== -->
