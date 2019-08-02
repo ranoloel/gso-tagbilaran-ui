@@ -1020,6 +1020,10 @@ main > section {
     padding: 25px 0;
 }
 
+a.cgso-link{
+    color:none;
+
+}
 .division-title{
     color:#0ab40e;
     font-size:20px;
@@ -1038,8 +1042,8 @@ main > section {
 .header-container-service-request{
     width:100%;
     background-color:#08720b;
-    padding-top:100px;
-    height:300px;
+    height:auto;
+    padding-bottom: 30px;
 }
 
 
@@ -1194,6 +1198,57 @@ main > section {
     height: 30px;
 }
 
+.cgso-requests-text{
+
+    margin-left:10%; 
+    color: #589C1F;
+}
+
+.cgso-header-text{
+    color:white;
+}
+
+cgso-header-text.dotted-text{
+    color:white;
+}
+
+.stay-connected-content-left-footer{
+
+    margin-left: -16px;
+    margin-top: -19px;
+    font-size: 25px;
+}
+
+.stay-connected-content-right-footer{
+    margin-top:-20px;
+}
+
+.stay-connected-content-email{
+    color: green;
+    font-size: 20px;
+}
+
+.stay-connected-content-email-input{
+    padding-top: 10px;
+}
+
+.stay-connected-subscribe{
+    padding-top: 10px;
+
+}
+
+.input-email-design{
+    border-color: green;
+    width: 60%;
+    height: 50px;
+}
+
+.stay-connected-subscribe-btn{
+    width: 30%;
+    height: 50px;
+}
+
+/*=
 /*=========== End Elmo Version ===========*/
 /*============================================================
 	Footer
