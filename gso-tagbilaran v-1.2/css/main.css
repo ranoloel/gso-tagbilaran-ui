@@ -1095,14 +1095,14 @@ a.cgso-link{
 
 .activity-headline{
 
-    color:#102760;
+    color:#06CB93;
 
 }
 
 .activity-line{
     width:99%;
     height:10px;
-    background-color:#102760;
+    background-color:#06CB93;
     margin-bottom: 50px;
 
 }
@@ -1110,12 +1110,13 @@ a.cgso-link{
 .time-bar{
     width:100%;
     height:10px;
-    background-color:#102760;
+    background-color:#06CB93;
+    margin-top: 2%
 }
 
 .time-center{
-    color:#102760;
-    font-size:20px;
+    color:#06CB93;
+    font-size:98%;
 
 }
 
@@ -1290,9 +1291,9 @@ cgso-header-text.dotted-text{
 
 .asenso{
     position: absolute;
-    font-size: 37px;
-    margin-top: 82px;
-    margin-left: 1208px;
+    font-size: 200%;
+    margin-top: 2%;
+    margin-left: 75%;
     color: white;
 }
 }

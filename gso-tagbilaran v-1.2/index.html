@@ -93,14 +93,12 @@
 				<div class="sl-slider">
 					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 						<div class="bg-img bg-img-1"></div>
+						<img src="img/slider/filter.png" class="greenfilter">
 						<div class="slide-caption">
                             <div class="caption-content">
                             	<b class="welcome-color" style="font-weight: 1">WELCOME TO</b>
                                 <b><h2 class="animated fadeInDown">TAGBILARAN CITY 
                                 <br>GENERAL SERVICES OFFICE</b></h2>
-      <!--                           <div class="asenso1"></div>
-                                <div class="asenso2"></div>
-                                <div class="asenso3"></div> -->
                                 <div class="asenso"><b>#AsensoPaMore</b></div></b>
                             </div>
                         </div>
@@ -140,234 +138,59 @@
 				document.getElementById("para1").innerHTML = formatAMPM();
 
 				function formatAMPM() {
-				var d = new Date(),
-				    minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
-				    hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
-				    ampm = d.getHours() >= 12 ? 'PM' : 'AM',
-				    months = ['JAN','FEB','MARCH','APRIL','MAY','JUNE','JULY','AUG.','SEPT.','OCT.','NOV.','DEC.'],
-				    days = ['SUN','MON','TUE','WED','THUR','FRI','SAT'];
-				return days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear()+', '+hours+':'+minutes+ampm;
+					var d = new Date(),
+						minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+						hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+						ampm = d.getHours() >= 12 ? 'PM' : 'AM',
+						months = ['JAN','FEB','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPT.','OCT.','NOV.','DEC.'],
+						days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+					return days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate();
 				}
 			</script>
 
-			<section id="service">
+			<!-- CGSO Intro -->
+			<section id="cgsointro">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
-							<div class="service-item">
-								<img src="img/icons/admin.png">
-								<div class="division-title">ADMIN DIVISION</div>
-								<p>City General Services Office where service is our passion and performance is our   commitment.</p>
-							</div>
+					<div class = "row">
+						<div class = "col-md-4" style="
+							margin-left: 5%;
+							margin-right: 2%;
+							margin-top:5%;
+							">
+							<img src = "img/cgso_vision.png" height="100%" width="100%">
 						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
-							<div class="service-item">
-								<img src="img/icons/supplies.png">
-								<div class="division-title">SUPLIES AND PROCUREMENT</div>
-								<p>City General Services Office where service is our passion and performance is our commitment. </p>
-							</div>
+						<div class="col-md-7 text-center" style="margin-top: 3%">
+							<h2>"A highly professionalized and competent department with committed, empowered and results-oriented employees with optimized performance and productivity using highly advanced technology and upgrade systems in the Service of Tagbilaran."</h2>
 						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
-							<div class="service-item">
-								<img src="img/icons/asset.png">
-								<div class="division-title">ASSET MANAGEMENT DIVISION</div>
-								<p>City General Services Office where service is our passion and performance is our commitment. </p>
-							</div>
-						</div>
-					
-						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
-							<div class="service-item">
-								<img src="img/icons/motor.png">
-								<div class="division-title">MOTORPOLE DIVISION </div>
-								<p>City General Services Office where service is our passion and performance is our commitment. </p>							
-							</div>
-						</div>
-						
 					</div>
 				</div>
 			</section>
-			<!-- end Service section -->
-			<!-- end portfolio section -->
-			<section id="portfolio">
-				<div class="header-container"></div>
-					<div class="bg-container">
-						<div class="container">
-							<div class="row">
-								<h2><b>CGSO ACTIVITIES</b></h2>
-								<div class="activity-line"></div>
-								<ul class="project-wrapper wow animated fadeInUp">
-									<li class="portfolio-item">
-										<img src="img/portfolio/item.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>TEAM BUILDING</h3>
-											<p>CGSO departmental streamlining and review.. </p>
-										</figcaption>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item2.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>FAMILY DAY</h3>
-											<p>CGSO departmental streamlining and review.. </p>
-										</figcaption>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item3.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>ALAY-LAKAD</h3>
-											<p>Thank you for visiting our office. Welcome to tagbilaran city General Services officers of Negros Occidental.#asensopamore </p>
-										</figcaption>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>INTERDEPARTMENTAL BALL GAMES</h3>
-											<p>CGSO departmental streamlining and review.. </p>
-										</figcaption>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item2.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>COSTAL CLEAN-UPS</h3>
-											<p>CGSO departmental streamlining and review.. </p>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item3.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>CHRISTMAS PARTY</h3>
-											<p>Thank you for visiting our office. Welcome to tagbilaran city General Services officers of Negros Occidental.#asensopamore </p>
-										</figcaption>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<!-- <div class="add-bottom"></div> -->
-					</div>
-				<!-- <div class="header-container"></div> -->
-					<div class="bg-container">
-						<div class="container">
-							<div class="row">
-								<h2><b>LATES NEWS</b></h2>
-								<div class="activity-line"></div>
-								<ul class="project-wrapper wow animated fadeInUp">
-									<li class="portfolio-item">
-										<img src="img/portfolio/item.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>TEAM BUILDING</h3>
-											<p>CGSO departmental streamlining and review.. </p>
-										</figcaption>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item2.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>FAMILY DAY</h3>
-											<p>CGSO departmental streamlining and review.. </p>
-										</figcaption>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item3.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>ALAY-LAKAD</h3>
-											<p>Thank you for visiting our office. Welcome to tagbilaran city General Services officers of Negros Occidental.#asensopamore </p>
-										</figcaption>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>INTERDEPARTMENTAL BALL GAMES</h3>
-											<p>CGSO departmental streamlining and review.. </p>
-										</figcaption>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item2.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>COSTAL CLEAN-UPS</h3>
-											<p>CGSO departmental streamlining and review.. </p>
-										</figcaption>
-									</li>
-									
-									<li class="portfolio-item">
-										<img src="img/portfolio/item3.jpg" class="img-responsive" alt="Please provide contents in this area">
-										<figcaption class="mask">
-											<h3>CHRISTMAS PARTY</h3>
-											<p>Thank you for visiting our office. Welcome to tagbilaran city General Services officers of Negros Occidental.#asensopamore </p>
-										</figcaption>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="add-bottom"></div>
-					</div>
+			<!-- end CGSO Intro section -->
 
-				<div class="header-container-service-request">
-					<div class="container">
-	<!-- 					<div class="row"> -->
-							<div class="cgso-wrapper">
-								<h2 class="cgso-header-text"><b>CGSO LATEST REQUESTS</b></h2>
-								<div class="col-md-6 col-sm-6 col-xs-12 text-left">
-										<div class="cgso-requests-text"><a href="">REQUEST TENT INSTALLATION</a></div>
-										<div class="cgso-requests-text dotted-text">---------------------------------------------------------------------------&nbsp;></div>
-										<div class="cgso-requests-text"><a href="">REQUEST CHAIRS, TABLES, PLATFORMS </a></div>
-										<div class="cgso-requests-text">---------------------------------------------------------------------------&nbsp;></div>
-										<div class="cgso-requests-text"><a href="">REQUEST SERVICE VEHICLES</a></div>
-										<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
-										<div class="cgso-requests-text"><a href="">REQUEST COPY OF LOT TITLES</a></div>
-										<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-6 col-xs-12 text-left">
-									<div class="cgso-requests-text"><a href="">REPORT MISSING AND DAMAGED STREET SIGN</a></div>
-									<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
-									<div class="cgso-requests-text"><a href="">REPORT STREET OUTAGE</a></div>
-									<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
-									<div class="cgso-requests-text"><a href="">FUNERAL SERVICE VEHICLES</a></div>
-									<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;></div>
-									<div class="cgso-requests-text"><a href="">FUNERAL SERVICE VEHICLES </a></div>
-									<div class="cgso-requests-text">----------------------------------------------------------------------------&nbsp;> </div>
-							</div>
-						<!-- </div> -->
-					</div>
-				</div>
-			</section>
-			<section id="portfolio">
-				<div class="container">
-					<div class="row">
-						<h2><b>STAY CONNECTED</b></h2>
-						<div class="activity-line"></div>
-						<div class="col-md-6 col-sm-6 col-xs-12 text-left">
-							<h2 class="stay-connected-content-left-footer">
-							Sign up for email updates from the</br>
-							 City GSO, including information </br>
-							 on the big events.
-							<h2>
+			<!-- Photos, Videos, and Updates -->
+			<div class="container text-center" style="background-color: lightgrey; margin-top: 4%;">
+				<div class="row">
+					<strong>
+						<div class="col-md-4">
+							<h1 style="color: #06CB93; font-weight: 900;">PHOTOS</h1>
+							<br>
+							<div class="col-md-12" style="background-color: #06CB93; height: 300px;"></div>
 						</div>
-						<div class="col-md-6 col-sm-6 col-xs-12 text-right">
-							<div class="stay-connected-content-right-footer">
-								<div class="stay-connected-content-email"><b>YOUR EMAIL ADDRESS</b></div>
-								<form>
-									<div class="stay-connected-content-email-input">
-										<input class="input-email-design" type="text" id="email" name="lname">
-									</div>
-									<div class="stay-connected-subscribe">
-									<button type="button" class="btn btn-success stay-connected-subscribe-btn">SUBSCRIBE</button>
-									</div>
-								</form>		
-							</div>
+						<div class="col-md-4">
+							<h1 style="color: #06CB93; font-weight: 900;">VIDEOS</h1>							
+							<br>
+							<div class="col-md-12" style="background-color: #06CB93; height: 300px;"></div>
 						</div>
-					</div>
+						<div class="col-md-4">
+							<h1 style="color: #06CB93; font-weight: 900;">UPDATES</h1>
+							<br>
+							<div class="col-md-12" style="background-color: #06CB93; height: 300px;"></div>
+						</div>
+					</strong>
 				</div>
-			</section>
-			<hr>
+			</div>
+			<!-- End -->
+			
 		</main>
 		
 		<!-- Essential jQuery Plugins
