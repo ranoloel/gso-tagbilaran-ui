@@ -13,16 +13,21 @@
 	position: relative;
 }
 
-
+.greenfilter {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	
+	height: 90%;
+	width: 100%;
+}
 
 .bg-img {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 115%;
+	height: 90%;
 	width: 100%;
-	filter: brightness(29%);
-    opacity: 0.9;
 }
 
 /* Custom navigation arrows */
