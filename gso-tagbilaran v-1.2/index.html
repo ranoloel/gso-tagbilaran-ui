@@ -54,19 +54,35 @@
 		<!-- Main Stylesheet -->
         <link rel="stylesheet" href="css/main.css">
 		<!-- Modernizer Script for old Browsers -->
-        <script src="js/modernizr-2.6.2.min.js"></script>
+		<script src="js/modernizr-2.6.2.min.js"></script>
+		<style>
+		.loader {
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				z-index: 9999;
+				background-color: white;
+				background: url('img/alt_preloader.gif') 50% 50% no-repeat rgb(249,249,249);
+			}
+		.loader img{
+			position: relative;
+			left: 40%;
+			top: 40%;
+		}
+	</style>
 
     </head>
 		<body id="body">
-			<div id="preloader">
-		        <div class="loder-box">
-		            <div class="battery"></div>
-		        </div>
-			</div>
+				<!-- Preloader -->
+				<div class="loader"></div>
 		<div class="logo-holder">	
 			<header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
 
 			<div id="mySidepanelgso" class="sidepanelgso">
+				<div id="glogo" style="position: absolute; top: 1%; left: 10%;"><img src="img/gso_logo.png" height="50"
+					width="50"></div>
 			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
 			  <a href="#" class="toggle-menu-bg">HOME</a>
 			  <a href="#" class="toggle-menu-bg">VISION | MISSION | GOALS</a>
@@ -76,12 +92,11 @@
 			</div>
 
 			<button class="openbtngso" onclick="openNav()">☰</button> 
-			<button class="gso-tagbilaran-head-text" style="margin-left: 17%"><a href="index.html"><b i style="color:white">gsotagbilaran@gmail.com</b></button>
 			<button class="gso-login"><a href="http://gsotagbilaran.com/login#/" style="color:white">LOGIN </a></button>
 			<button class="gso-feedback"><a href="feedback.html" style="color:white">FEEDBACK</button>
-			<button class="gso-search"><span class="glyphicon glyphicon-search"></span></button>
-			<div id="glogo" style="position: absolute; top: 15%; left: 5%;"><img src="img/gso_logo.png" height="100" width ="100"></div>
-			<div id="glogo" style="position: absolute; top: 15%; left: 13%;"><img src="img/tagbilarancity_seal.png" height="100" width ="100"></div>
+			<button class="gso-search"><span class="glyphicon glyphicon-search"></span></button>			
+			<div id="glogo" style="position: absolute; top: 5%; left: 6%;"><img src="img/gso_logo.png" height="40"
+				width="40"></div>
         </header>
 	</div>
 		<main class="site-content" role="main">
@@ -219,6 +234,27 @@
 					</div>
 				</div>
 			</section>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 text-center">
+							<h3><i class="fa fa-envelope"></i> <strong>gsotagbilaran@gmail.com</strong></h3>
+						</div>
+						<div class="col-md-4 text-center">
+							<h3><i class="fa fa-phone"></i> <strong>411-2222[BABA] local 147</strong></h3>
+						</div>
+						<div class="col-md-4 text-center">
+							<h3><i class="fa fa-globe"></i> <strong>www.tagbilaran.gov.ph</strong></h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h4 style="text-align:center">CITY GOVERNMENT OF TAGBILARAN</h4>
+							<h5 style="text-align:center">Copyright © 2019</h5>
+						</div>
+					</div>
+				</div>
+			</footer>
 			
 		</main>
 		
@@ -247,6 +283,11 @@
         <script src="js/main.js"></script>
 
 		<script>
+			//Preloader
+			window.onload = function(){
+			// loader on page load 
+			$('.loader').fadeOut();
+			}	
 			function openNav() {
 				document.getElementById("mySidepanelgso").style.width = "250px";
 			}
