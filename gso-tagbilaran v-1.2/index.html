@@ -168,29 +168,29 @@
 	</style>
 
     </head>
-		<body id="body">
-				<!-- Preloader -->
-				<div class="loader"></div>
+	<body id="body">
 		<div class="logo-holder">	
-			<header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+			<header id="navigation" class="navbar-inverse navbar-fixed-top add-header-width">
 
-			<div id="mySidepanelgso" class="sidepanelgso">
-				<div id="glogo" style="position: absolute; top: 1%; left: 10%;"><img src="img/gso_logo.png" height="50"
-					width="50"></div>
-			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-			  <a href="index.html" class="toggle-menu-bg">HOME</a>
-			  <a href="divisions.html" class="toggle-menu-bg">CGSO DIVISIONS</a>
-			  <a href="organizational.html" class="toggle-menu-bg">ORGANIZATIONAL STRUCTURE</a>
-			  <a href="#" class="toggle-menu-bg">ALBUMS</a>
-			</div>
+				<div id="mySidepanelgso" class="sidepanelgso">
+					<div id="glogo" style="position: absolute; top: 1%; left: 10%;"><img src="img/gso_logo.png" height="50"
+						width="50"></div>
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+				  <a href="index.html" class="toggle-menu-bg">HOME</a>
+				  <a href="divisions.html" class="toggle-menu-bg">CGSO DIVISIONS</a>
+				  <a href="organizational.html" class="toggle-menu-bg">ORGANIZATIONAL STRUCTURE</a>
+				  <a href="#" class="toggle-menu-bg">ALBUMS</a>
+				</div>
 
-			<button class="openbtngso" onclick="openNav()">☰</button> 
-			<button class="gso-login"><a href="http://gsotagbilaran.com/login#/" style="color:white">LOGIN </a></button>
-			<button class="gso-search"><span class="glyphicon glyphicon-search"></span></button>			
-			<div id="glogo" style="position: absolute; top: 5%; left: 6%;"><img src="img/gso_logo.png" height="40"
-				width="40"></div>
-        </header>
-	</div>
+				<button class="openbtngso" onclick="openNav()">☰</button> 
+				<button class="gso-login"><a href="http://gsotagbilaran.com/login#/" style="color:white">Login </a></button>
+				<button class="gso-search"><input class="form-control form-control-sm mr-3 w-75" type="text" id="myInput" onkeyup="myFunction()" placeholder="Search"
+		    		aria-label="Search" class="glyphicon glyphicon-search"></button>
+			
+				<div id="glogo" style="position: absolute; top: 5%; left: 6%;"><img src="img/gso_logo.png" height="55"
+					width="55"></div>
+        	</header>
+		</div>
 		<main class="site-content" role="main">
         <!--
         Home Slider
@@ -328,17 +328,35 @@
 						<div class="col-md-4">
 							<h1 style="color: #06CB93; font-weight: 900;">PHOTOS</h1>
 							<br>
-							<div class="col-md-12" style="background-color: #06CB93; height: 300px;"></div>
+								<div class="portfolio-item">
+									<img src="img/albums/conference3.jpg" class="img-responsive" alt="Please provide contents in this area">
+									<figcaption class="mask">
+										<h3>Photos</h3>
+										<p>This photo will be linked to CGSO albums. </p>
+									</figcaption>
+								</div>
 						</div>
 						<div class="col-md-4">
-							<h1 style="color: #06CB93; font-weight: 900;">VIDEOS</h1>							
+							<h1 style="color: #06CB93; font-weight: 900;">VIDEOS</h1>
 							<br>
-							<div class="col-md-12" style="background-color: #06CB93; height: 300px;"></div>
+								<div class="portfolio-item">
+									<a href="https://www.youtube.com/watch?v=9577t_f1hDw"><img src="img/albums/slider75.jpg" class="img-responsive" alt="Please provide contents in this area"></a>
+									<figcaption class="mask">
+										<h3>Videos</h3>
+										<p>This video will be linked to CGSO videos. </p>
+									</figcaption>
+								</div>
 						</div>
 						<div class="col-md-4">
 							<h1 style="color: #06CB93; font-weight: 900;">UPDATES</h1>
 							<br>
-							<div class="col-md-12" style="background-color: #06CB93; height: 300px;"></div>
+								<div class="portfolio-item">
+									<a href="https://www.facebook.com/tagbilarancitygso"><img src="img/albums/fb2.png" class="img-responsive" alt="Please provide contents in this area"></a>
+									<figcaption class="mask">
+										<h3>Updates</h3>
+										<p>This will be linked to CGSO Facebook page. </p>
+									</figcaption>
+								</div>
 						</div>
 					</strong>
 				</div>
@@ -368,11 +386,12 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h4 style="text-align:center">CITY GOVERNMENT OF TAGBILARAN</h4>
-							<h5 style="text-align:center">Copyright © 2019</h5>
+							<h5 style="text-align:center">gsotagbilaran © 2019</h5>
 						</div>
 					</div>
 				</div>
 			</footer>
+			<br><br>
 			
 		</main>
 		
@@ -428,7 +447,25 @@
 			slides[slideIndex-1].style.display = "block";  
 			dots[slideIndex-1].className += " active";
 			setTimeout(showSlides, 2000);
-			}			
+			}	
+
+
+			function myFunction() {
+			    var input, filter, ul, li, a, i, txtValue;
+			    input = document.getElementById("myInput");
+			    filter = input.value.toUpperCase();
+			    ul = document.getElementById("myUL");
+			    li = ul.getElementsByTagName("li");
+			    for (i = 0; i < li.length; i++) {
+			        a = li[i].getElementsByTagName("a")[0];
+			        txtValue = a.textContent || a.innerText;
+			        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+			            li[i].style.display = "";
+			        } else {
+			            li[i].style.display = "none";
+			        }
+			    }
+			}		
 		</script>
     </body>
 </html>

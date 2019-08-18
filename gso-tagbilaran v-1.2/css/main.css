@@ -653,6 +653,7 @@ h1.navbar-brand {
     padding: 0;
     list-style: none;
     text-align: center;
+    margin-left: 10px
 }
 
 .project-wrapper li {
@@ -664,7 +665,8 @@ h1.navbar-brand {
     margin: 0 1% 1% 0;
     overflow: hidden;
     position: relative;
-    width: 32%;
+    width: 100%;
+    height:300px;
 }
 
 figcaption.mask {
@@ -991,7 +993,7 @@ ul.external li a:hover {
     box-shadow: none;
     color: #818181;
     font-size: 16px;
-    height: 50px;
+    height: 37px;
 }
 
 textarea.form-control {
@@ -1160,13 +1162,12 @@ a.cgso-link{
 }
 
 .openbtngso {
-  font-size: 20px;
-  cursor: pointer;
-  background-color: #0f2660;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #0f2660;
+    color: white;
+    padding: 18px 20px;
+    border: none;
 }
 
 .openbtngso:hover {
@@ -1206,22 +1207,28 @@ a.cgso-link{
     float: right;
 }
 
+.img-photo{
+
+    width: 100%;
+    height: 300px;
+}
+
 .gso-login {
-    font-size: 12px;
+    font-size: 18px;
     cursor: pointer;
     background-color: #0ab40e;
     color: white;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border: none;
     float: right;
 }
 
 .gso-search {
-    font-size: 12px;
+    font-size: 18px;
     cursor: pointer;
     background-color: #0ab40e;
     color: white;
-    padding: 10px 15px;
+    padding: 11px 0px;
     border: none;
     float: right;
 }
@@ -1294,6 +1301,32 @@ cgso-header-text.dotted-text{
     margin-left: 75%;
     color: white;
 }
+
+.add-header-width{
+
+height: 60px;
+}
+
+
+.active-pink-2 input[type=text]:focus:not([readonly]) {
+border-bottom: 1px solid #f48fb1;
+box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink input[type=text] {
+border-bottom: 1px solid #f48fb1;
+box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-purple-2 input[type=text]:focus:not([readonly]) {
+border-bottom: 1px solid #ce93d8;
+box-shadow: 0 1px 0 0 #ce93d8;
+}
+.active-purple input[type=text] {
+border-bottom: 1px solid #ce93d8;
+box-shadow: 0 1px 0 0 #ce93d8;
+}
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+border-bottom: 1px solid #4dd0e1;
+box-shadow: 0 1px 0 0 #4dd0e1;
 }
 
 /*=
