@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+	<!--Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<!--Favicon-->
+	<!-- meta character set -->
+    <meta charset="utf-8">
+	<!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>GSO</title>		
+	<!-- Meta Description -->
+    <meta name="description" content="Blue One Page Creative HTML5 Template">
+    <meta name="keywords" content="one page, single page, onepage, responsive, parallax, creative, business, html5, css3, css3 animation">
+    <meta name="author" content="Muhammad Morshed">
+	<!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS
+	================================================== -->
+	<link rel="shortcut icon" href="img/icons/gso.ico">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+	<!-- Fontawesome Icon font -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+	<!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+	<!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/slit-slider.css">
+	<!-- bootstrap.min -->
+    <link rel="stylesheet" href="css/animate.css">
+	<!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/main.css">
+	<!-- Modernizer Script for old Browsers -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	<style>
+		.loader {
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				z-index: 9999;
+				background-color: white;
+				background: url('img/alt_preloader.gif') 50% 50% no-repeat rgb(249,249,249);
+			}
+		.loader img{
+			position: relative;
+			left: 40%;
+			top: 40%;
+		}
+
+		* {box-sizing:border-box}
+
+		/* Slideshow container */
+		.slideshow-container {
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+		}
+
+		/* Hide the images by default */
+		.mySlides {
+		display: none;
+		}
+
+		/* Next & previous buttons */
+		.prev, .next {
+		cursor: pointer;
+		position: absolute;
+		top: 50%;
+		width: auto;
+		margin-top: -22px;
+		padding: 16px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 5s ease;
+		border-radius: 0 3px 3px 0;
+		user-select: none;
+		}
+
+		/* Position the "next button" to the right */
+		.next {
+		right: 0;
+		border-radius: 3px 0 0 3px;
+		}
+
+		/* On hover, add a black background color with a little bit see-through */
+		.prev:hover, .next:hover {
+		background-color: rgba(0,0,0,0.8);
+		}
+
+		/* Caption text */
+		.text {
+		color: #f2f2f2;
+		font-size: 15px;
+		padding: 8px 12px;
+		position: absolute;
+		bottom: 8px;
+		width: 100%;
+		text-align: center;
+		}
+
+		/* Number text (1/3 etc) */
+		.numbertext {
+		color: #f2f2f2;
+		font-size: 12px;
+		padding: 8px 12px;
+		position: absolute;
+		top: 0;
+		}
+
+		/* The dots/bullets/indicators */
+		.dot {
+		cursor: pointer;
+		height: 15px;
+		width: 15px;
+		margin: 0 2px;
+		background-color: #bbb;
+		border-radius: 50%;
+		display: inline-block;
+		transition: background-color 0.6s ease;
+		}
+
+		.active, .dot:hover {
+		background-color: #717171;
+		}
+
+		/* Fading animation */
+		.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 7s;
+		animation-name: fade;
+		animation-duration: 7s;
+		}
+
+		@-webkit-keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+		}
+
+		@keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+		}
+	</style>
+
+</head>
+<body id="body">
+	<div class="logo-holder">	
+		<header id="navigation" class="navbar-inverse navbar-fixed-top add-header-width">
+			<div id="mySidepanelgso" class="sidepanelgso">
+				<div id="glogo" style="position: absolute; top: 1%; left: 10%;">
+					<img src="img/gso_logo.png" height="55" width="55">
+				</div>
+			  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+				<a href="index.html" class="toggle-menu-bg">HOME</a>
+				<a href="https://tagbilaran.gov.ph/mission-vision/" class="toggle-menu-bg">TAGBILARAN CITY MISSION, VISION, GOALS</a>
+			  	<a href="organizational.html" class="toggle-menu-bg">ORGANIZATIONAL CHART</a>
+			  	<a href="#" class="toggle-menu-bg">E-PROCUREMENT</a>
+			  	<a href="divisions.html" class="toggle-menu-bg">CGSO DIVISIONS</a>
+			  	<a href="#" class="toggle-menu-bg">BIDS AND AWARDS COMMITTEE</a>
+			  	<a href="#" class="toggle-menu-bg">CONTACTS</a>
+			</div>
+			<button class="openbtngso" onclick="openNav()">☰</button> 
+			<button class="gso-login"><a href="http://gsotagbilaran.com/login#/" style="color:white">Login </a></button>
+			<button class="gso-search">
+				<input class="form-control form-control-sm mr-3 w-75" type="text" id="myInput"  placeholder="Search"
+	    		aria-label="Search" class="glyphicon glyphicon-search">
+	    	</button>
+			<div class="glogo">
+				<img src="img/gso_logo.png" height="55" width="55">
+			</div>
+       	</header>
+	</div>
+	<main class="site-content" role="main">
+        <!-----------------------------------
+        Home Slider
+        ==================================== -->
+		<section id="home-slider">
+            <div id="slider"To hide the logo on page scroll class="sl-slider-wrapper">
+				<div class="sl-slider">
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+						<div class="bg-img bg-img-1"></div>
+						<img src="img/slider/filter.png" class="greenfilter">
+						<div class="slide-caption">
+                            <div class="caption-content">
+                            	<b class="welcome-color" style="font-weight: 1">WELCOME TO</b>
+                                <b><h2 class="animated fadeInDown">TAGBILARAN CITY 
+                                <br>GENERAL SERVICES OFFICE</b></h2>
+                                <div class="asenso"><b class="respon">#AsensoPaMore</b></div></b>
+                            </div>
+                        </div>
+					</div>
+				</div>        
+				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+					<span class="nav-dot-current"></span>
+					<span></span>
+					<span></span>
+				</nav>
+			</div>
+		</section>
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+			<!-- Service section -->
+		<section id="service">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+						<div class="time-bar"> </div>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+						<div class="time-center"> <b id="para1"></b> </div>
+					</div>
+					<div class="col-md-5 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+						<div class="time-bar"> </div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<script>
+			document.getElementById("para1").innerHTML = formatAMPM();
+				function formatAMPM() {
+					var d = new Date(),
+						minutes = d.getMinutes().toString().length == 1 ? '0'+d.getMinutes() : d.getMinutes(),
+						hours = d.getHours().toString().length == 1 ? '0'+d.getHours() : d.getHours(),
+						ampm = d.getHours() >= 12 ? 'PM' : 'AM',
+						months = ['JAN','FEB','MARCH','APRIL','MAY','JUNE','JULY','AUGUST','SEPT.','OCT.','NOV.','DEC.'],
+						days = ['SUNDAY','MONDAY','TUESDAY','WEDNESDAY','THURSDAY','FRIDAY','SATURDAY'];
+					return days[d.getDay()]+', '+months[d.getMonth()]+' '+d.getDate();
+				}
+		</script>
+
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+			<!-- VISION -->
+				<div class = "row">
+					<div class = "col-md-4" style=" margin-left: 5%; margin-right: 2%; margin-top:5%;">
+						<img src = "img/cgso_vision.png" height="100%" width="100%">
+					</div>
+					<div class="col-md-7 text-center" style="margin-top: 3%">
+						<h2>"A highly professionalized and competent department with committed, empowered and results-oriented employees with optimized performance and productivity using highly advanced technology and upgraded systems in the Service of Tagbilaran."</h2>
+					</div>
+				</div>
+				<!-- end of VISION -->
+			</div>			
+			<div class="mySlides fade">
+			<!-- MISSION -->
+				<div class = "row">
+					<div class = "col-md-4" style="
+								margin-left: 5%;
+								margin-right: 2%;
+								margin-top:5%;
+								">
+								<img src = "img/cgso_mission.png" height="100%" width="100%">
+							</div>
+							<div class="col-md-7 text-center" style="margin-top: 3%">
+								<h2>"City General Services Office where service is our passion and performance is our commitment."</h2>
+							</div>
+						</div>
+				<!-- end of MISSION -->
+				</div>
+			
+				<div class="mySlides fade">
+				<!-- GOALS -->
+						<div class = "row">
+							<div class = "col-md-4" style="
+								margin-left: 5%;
+								margin-right: 2%;
+								margin-top:5%;
+								">
+								<img src = "img/cgso_goals.png" height="100%" width="100%">
+							</div>
+							<div class="col-md-7 text-center" style="margin-top: 3%">
+								<h2> "Provision of quality administrative service, Prompt and timely supply management and procurement support, Efficient motor pool and transportation assistance, Update property, inventory and asset management".
+								</h2>
+							</div>
+						</div>
+				<!-- end of GOALS -->
+				</div>
+			
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+			<br>				
+			<!-- The dots/circles -->
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+			</div>
+			<!-- Slideshow end -->
+
+			<!-- Photos, Videos, and Updates -->
+			<div class="container text-center" style="background-color: lightgrey; margin-top: 4%;">
+				<div class="row" style="margin-bottom: 4%">
+					<dv class="col-md-12">
+						<div class="col-md-4">
+							<h1 style="color: #06CB93; font-weight: 900;">PHOTOS</h1><br>
+							<div class="portfolio-item">
+								<a href="albums.html">
+									<img src="img/albums/conference3.jpg" class="img-fluid">
+								</a>
+								<figcaption class="mask">
+									<h3>Photos</h3>
+									<p>Capture the best CGSO memories to this album. </p>
+								</figcaption>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h1 style="color: #06CB93; font-weight: 900;">VIDEOS</h1><br>
+							<div class="portfolio-item">
+								<a href="https://www.facebook.com/tagbilarancitygso/videos/273165286554316/">
+									<img src="img/albums/stock-room2.jpg" class="img-fluid">
+								</a>
+								<figcaption class="mask">
+									<h3>Videos</h3>
+									<p>Stay tuned to our CGSO youtube channel for more video updates. </p>
+								</figcaption>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<h1 style="color: #06CB93; font-weight: 900;">UPDATES</h1><br>
+							<div class="portfolio-item">
+								<a href="https://www.facebook.com/tagbilarancitygso">
+										<img src="img/albums/fb2.png" class="img-fluid2">
+								</a>
+								<figcaption class="mask">
+									<h3>Updates</h3>
+									<p>Please follow our CGSO Facebook page for more updates. </p>
+								</figcaption>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End -->
+			<br><br>
+			<footer>
+				<div class="container">
+					<div class="row">
+						<h2><b style="margin-left: 10px;">STAY CONNECTED</b></h2>
+						<div class="activity-line"></div>
+						<div class="col-md-4 text-center">
+							<h3><i class="fa fa-envelope"></i> <strong>gsotagbilaran@gmail.com</strong></h3>
+						</div>
+						<div class="col-md-4 text-center">
+							<h3><i class="fa fa-phone"></i> <strong>411-2222[BABA] local 147</strong></h3>
+						</div>
+						<div class="col-md-4 text-center">
+							<h3><i class="fa fa-globe"></i> <strong>www.tagbilaran.gov.ph</strong></h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<h4 style="text-align:center">CITY GOVERNMENT OF TAGBILARAN</h4>
+							<h5 style="text-align:center">gsotagbilaran © 2019</h5>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<br><br>
+			
+		</main>
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <!-- <script src="js/jquery.singlePageNav.min.js"></script> -->
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js"></script>
+
+		<script>
+			//Preloader
+			window.onload = function(){
+			// loader on page load 
+			$('.loader').fadeOut();
+			}	
+			function openNav() {
+				document.getElementById("mySidepanelgso").style.width = "250px";
+			}
+
+			function closeNav() {
+				 document.getElementById("mySidepanelgso").style.width = "0";
+			}
+			
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";  
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex-1].style.display = "block";  
+			dots[slideIndex-1].className += " active";
+			setTimeout(showSlides, 7000);
+			}	
+
+
+			//listener for enter key
+			$("#myInput").focus(function() {
+				$(this).data("hasfocus", true);
+			});
+
+			$("#myInput").blur(function() {
+				$(this).data("hasfocus", false);
+			});
+
+			$(document.body).keyup(function(ev) {
+				// 13 is ENTER
+				if (ev.which === 13 && $("#myInput").data("hasfocus")) {
+					findInPage(document.getElementById("myInput").value);
+				}
+			});			
+
+			//function to find text in page
+			var n = 0;
+			function findInPage(str) {
+				var txt, i, found;
+				if (str == "") {
+					return false; 
+				}
+				// Find next occurance of the given string on the page, wrap around to the
+				// start of the page if necessary.
+				if (window.find) {
+					// Look for match starting at the current point. If not found, rewind
+					// back to the first match.
+					if (!window.find(str)) {
+						while (window.find(str, false, true)) {
+							n++;
+						}
+					} else {
+						n++;
+					}
+					// If not found in either direction, give message.
+					if (n == 0) {
+						alert("Not found.");
+					}
+				} else if (window.document.body.createTextRange) {
+					txt = window.document.body.createTextRange();
+					// Find the nth match from the top of the page.
+					found = true;
+					i = 0;
+					while (found === true && i <= n) {
+						found = txt.findText(str);
+						if (found) {
+							txt.moveStart("character", 1);
+							txt.moveEnd("textedit");
+						}
+						i += 1;
+					}
+					// If found, mark it and scroll it into view.
+					if (found) {
+						txt.moveStart("character", -1);
+						txt.findText(str);
+						txt.select();
+						txt.scrollIntoView();
+						n++;
+					} else {
+						// Otherwise, start over at the top of the page and find first match.
+						if (n > 0) {
+							n = 0;
+							findInPage(str);
+						}
+						// Not found anywhere, give message. else
+						alert("Not found.");
+					}
+				}
+				return false;
+			}
+
+		</script>
+    </body>
+</html>
