@@ -398,7 +398,8 @@ h1.navbar-brand {
     color: #fff;
     font-size: 76px;
     font-weight: 400;
-    margin-bottom: 114px;
+    margin-bottom: 289px;
+    line-height: 62px;
     text-transform: uppercase;
 }
 
