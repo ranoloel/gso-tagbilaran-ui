@@ -1467,8 +1467,8 @@ cgso-header-text.dotted-text {
 .asenso {
     position: absolute;
     font-size: 200%;
-    margin-top: 2%;
-    margin-left: 70%;
+    margin-top: -2%;
+    margin-left: 80%;
     color: white;
 }
 
